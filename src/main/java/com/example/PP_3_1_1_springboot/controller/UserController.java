@@ -1,4 +1,4 @@
-package com.example.PP_3_1_1_springboot.controllers;
+package com.example.PP_3_1_1_springboot.controller;
 
 import com.example.PP_3_1_1_springboot.model.User;
 import com.example.PP_3_1_1_springboot.service.UserService;
@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 @Controller
 public class UserController {
 
-    UserService userService;
+    private final UserService userService;
 
     @Autowired
     public UserController(UserService userService) {
